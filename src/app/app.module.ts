@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router'
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './share/material.module';
 import { ContactManagerComponent } from './contact-manager/contact-manager.component';
+import { ContactManagerModule } from './contact-manager/contact-manager.module';
 
 const appRoutes: Routes = [
-  { path: 'path', component: ContactManagerComponent },
-]
+  { path: '', component: ContactManagerComponent },
+];
 
 @NgModule({
   declarations: [
@@ -17,9 +18,10 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
-    MaterialModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    ContactManagerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
