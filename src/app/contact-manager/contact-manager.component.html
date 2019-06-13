@@ -1,11 +1,8 @@
-<div class="app-container">
-  <app-sidenav #sidenav>
-  </app-sidenav>
+<mat-sidenav-container class="app-container">
+  <mat-sidenav #sidenav mode="side" opened>Sidenav Content</mat-sidenav>
 
-  <app-toolbar (toggleSidenav)="sidenav.toggle()">
-  </app-toolbar>
-
-  <div class="side-content">
+  <mat-sidenav-content>
+    <button mat-button (click)="sidenav.toggle()"> Toggle </button>
     <app-main-content></app-main-content>
-  </div>
-</div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
