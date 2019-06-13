@@ -1,4 +1,6 @@
-.app-container {
+$iconWidth: 56px;
+
+.app-sidenav-container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -7,8 +9,23 @@
   background: #eee;
 }
 
-.side-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.app-sidenav {
+  width: 200px;
 }
+
+mat-icon {
+  font-size: 30px;
+  widows: $iconWidth;
+  height: $iconWidth;
+  line-height: $iconWidth;
+  color: white;
+}
+
+.main-content {
+  padding: 50px;
+}
+//.side-content {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
