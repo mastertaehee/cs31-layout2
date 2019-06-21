@@ -10,6 +10,7 @@ export class ContactManagerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
